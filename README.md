@@ -1,2 +1,2 @@
 # EverydayGit
-养成每天写代码的习惯并提交到GitHub。
+养成每天写代码并提交到GitHub的习惯！
