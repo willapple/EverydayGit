@@ -1,6 +1,6 @@
 package com;
 /**
- * 用Java编写简单的快速排序
+ * 用Java编写简单的快速排序算法
  * @author William
  *
  */
