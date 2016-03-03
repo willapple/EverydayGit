@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import java.util.Vector;
 
 /**
- * JavaÏà¹Ø¼¯ºÏµÄÒ»Ğ©²Ù×÷
+ * Javaç›¸å…³é›†åˆçš„ä¸€äº›æ“ä½œ
  * @author William
  *
  */
