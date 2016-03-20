@@ -1,18 +1,17 @@
-StringUtils·½·¨È«¼¯:
+StringUtilsæ–¹æ³•å…¨é›†:
+org.apache.commons.lang.StringUtilsä¸­æ–¹æ³•çš„æ“ä½œå¯¹è±¡æ˜¯java.lang.Stringç±»å‹çš„å¯¹è±¡ï¼Œæ˜¯JDKæä¾›çš„Stringç±»å‹æ“ä½œæ–¹æ³•çš„è¡¥å……ï¼Œå¹¶ä¸”æ˜¯nullå®‰å…¨çš„(å³å¦‚æœè¾“å…¥å‚æ•°Stringä¸ºnullåˆ™ä¸ä¼šæŠ›å‡ºNullPointerExceptionï¼Œè€Œæ˜¯åšäº†ç›¸åº”å¤„ç†ï¼Œä¾‹å¦‚ï¼Œå¦‚æœè¾“å…¥ä¸ºnullåˆ™è¿”å›ä¹Ÿæ˜¯nullç­‰ï¼Œå…·ä½“å¯ä»¥æŸ¥çœ‹æºä»£ç )ã€‚ 
 
-org.apache.commons.lang.StringUtilsÖĞ·½·¨µÄ²Ù×÷¶ÔÏóÊÇjava.lang.StringÀàĞÍµÄ¶ÔÏó£¬ÊÇJDKÌá¹©µÄStringÀàĞÍ²Ù×÷·½·¨µÄ²¹³ä£¬²¢ÇÒÊÇnull°²È«µÄ(¼´Èç¹ûÊäÈë²ÎÊıStringÎªnullÔò²»»áÅ×³öNullPointerException£¬¶øÊÇ×öÁËÏàÓ¦´¦Àí£¬ÀıÈç£¬Èç¹ûÊäÈëÎªnullÔò·µ»ØÒ²ÊÇnullµÈ£¬¾ßÌå¿ÉÒÔ²é¿´Ô´´úÂë)¡£ 
+é™¤äº†æ„é€ å™¨ï¼ŒStringUtilsä¸­ä¸€å…±æœ‰130å¤šä¸ªæ–¹æ³•ï¼Œå¹¶ä¸”éƒ½æ˜¯staticçš„ï¼Œ 
 
-³ıÁË¹¹ÔìÆ÷£¬StringUtilsÖĞÒ»¹²ÓĞ130¶à¸ö·½·¨£¬²¢ÇÒ¶¼ÊÇstaticµÄ£¬ 
+æ‰€ä»¥æˆ‘ä»¬å¯ä»¥è¿™æ ·è°ƒç”¨StringUtils.xxx()ã€‚ 
 
-ËùÒÔÎÒÃÇ¿ÉÒÔÕâÑùµ÷ÓÃStringUtils.xxx()¡£ 
-
-ÏÂÃæ·Ö±ğ¶ÔÒ»Ğ©³£ÓÃ·½·¨×ö¼òÒª½éÉÜ£º 
+ä¸‹é¢åˆ†åˆ«å¯¹ä¸€äº›å¸¸ç”¨æ–¹æ³•åšç®€è¦ä»‹ç»ï¼š 
 
 1. public static boolean isEmpty(String str) 
 
-ÅĞ¶ÏÄ³×Ö·û´®ÊÇ·ñÎª¿Õ£¬Îª¿ÕµÄ±ê×¼ÊÇstr == null »ò str.length() == 0 
+åˆ¤æ–­æŸå­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºï¼Œä¸ºç©ºçš„æ ‡å‡†æ˜¯str == null æˆ– str.length() == 0 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.isEmpty(null)          = true 
 
@@ -28,9 +27,9 @@ StringUtils.isEmpty(" bob ") = false
 
 2. public static boolean isNotEmpty(String str) 
 
-ÅĞ¶ÏÄ³×Ö·û´®ÊÇ·ñ·Ç¿Õ£¬µÈÓÚ!isEmpty(String str) 
+åˆ¤æ–­æŸå­—ç¬¦ä¸²æ˜¯å¦éç©ºï¼Œç­‰äº!isEmpty(String str) 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.isNotEmpty(null)        = false 
 
@@ -46,9 +45,9 @@ StringUtils.isNotEmpty(" bob ")   = true
 
 3. public static boolean isBlank(String str) 
 
-ÅĞ¶ÏÄ³×Ö·û´®ÊÇ·ñÎª¿Õ»ò³¤¶ÈÎª0»òÓÉ¿Õ°×·û(whitespace)¹¹³É 
+åˆ¤æ–­æŸå­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºæˆ–é•¿åº¦ä¸º0æˆ–ç”±ç©ºç™½ç¬¦(whitespace)æ„æˆ 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.isBlank(null)         = true 
 
@@ -68,11 +67,11 @@ StringUtils.isBlank(" bob ")        = false
 
 4. public static boolean isNotBlank(String str) 
 
-ÅĞ¶ÏÄ³×Ö·û´®ÊÇ·ñ²»Îª¿ÕÇÒ³¤¶È²»Îª0ÇÒ²»ÓÉ¿Õ°×·û(whitespace)¹¹³É£¬ 
+åˆ¤æ–­æŸå­—ç¬¦ä¸²æ˜¯å¦ä¸ä¸ºç©ºä¸”é•¿åº¦ä¸ä¸º0ä¸”ä¸ç”±ç©ºç™½ç¬¦(whitespace)æ„æˆï¼Œ 
 
-µÈÓÚ!isBlank(String str) 
+ç­‰äº!isBlank(String str) 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.isNotBlank(null)        = false 
 
@@ -92,11 +91,11 @@ StringUtils.isNotBlank(" bob ")   = true
 
 5. public static String trim(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿ØÖÆ·û(control characters, char <= 32) 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„æ§åˆ¶ç¬¦(control characters, char <= 32) 
 
-Èç¹ûÊäÈëÎªnullÔò·µ»Ønull 
+å¦‚æœè¾“å…¥ä¸ºnullåˆ™è¿”å›null 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.trim(null)                = null 
 
@@ -116,11 +115,11 @@ StringUtils.trim("     dd       ")           = "dd"
 
 6.public static String trimToNull(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿ØÖÆ·û(control characters, char <= 32) 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„æ§åˆ¶ç¬¦(control characters, char <= 32) 
 
-Èç¹û±äÎªnull»ò""£¬Ôò·µ»Ønull 
+å¦‚æœå˜ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›null 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.trimToNull(null)                = null 
 
@@ -140,11 +139,11 @@ StringUtils.trimToNull("     dd       ")          = "dd"
 
 7.public static String trimToEmpty(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿ØÖÆ·û(control characters, char <= 32) 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„æ§åˆ¶ç¬¦(control characters, char <= 32) 
 
-Èç¹û±äÎªnull»ò""£¬Ôò·µ»Ø"" 
+å¦‚æœå˜ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›"" 
 
-ÏÂÃæÊÇÊ¾Àı£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹ï¼š 
 
 StringUtils.trimToEmpty(null)                    = "" 
 
@@ -164,11 +163,11 @@ StringUtils.trimToEmpty("     dd       ")          = "dd"
 
 8.public static String strip(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿Õ°×·û(whitespace)£¬ 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„ç©ºç™½ç¬¦(whitespace)ï¼Œ 
 
-Èç¹ûÊäÈëÎªnullÔò·µ»Ønull 
+å¦‚æœè¾“å…¥ä¸ºnullåˆ™è¿”å›null 
 
-ÏÂÃæÊÇÊ¾Àı(×¢ÒâºÍtrim()µÄÇø±ğ)£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹(æ³¨æ„å’Œtrim()çš„åŒºåˆ«)ï¼š 
 
 StringUtils.strip(null)                    = null 
 
@@ -188,11 +187,11 @@ StringUtils.strip("     dd       ")          = "dd"
 
 9.public static String stripToNull(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿Õ°×·û(whitespace)£¬ 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„ç©ºç™½ç¬¦(whitespace)ï¼Œ 
 
-Èç¹û±äÎªnull»ò""£¬Ôò·µ»Ønull 
+å¦‚æœå˜ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›null 
 
-ÏÂÃæÊÇÊ¾Àı(×¢ÒâºÍtrimToNull()µÄÇø±ğ)£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹(æ³¨æ„å’ŒtrimToNull()çš„åŒºåˆ«)ï¼š 
 
 StringUtils.stripToNull(null)                   = null 
 
@@ -212,11 +211,11 @@ StringUtils.stripToNull("     dd       ")          = "dd"
 
 10.public static String stripToEmpty(String str) 
 
-È¥µô×Ö·û´®Á½¶ËµÄ¿Õ°×·û(whitespace)£¬ 
+å»æ‰å­—ç¬¦ä¸²ä¸¤ç«¯çš„ç©ºç™½ç¬¦(whitespace)ï¼Œ 
 
-Èç¹û±äÎªnull»ò""£¬Ôò·µ»Ø"" 
+å¦‚æœå˜ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›"" 
 
-ÏÂÃæÊÇÊ¾Àı(×¢ÒâºÍtrimToEmpty()µÄÇø±ğ)£º 
+ä¸‹é¢æ˜¯ç¤ºä¾‹(æ³¨æ„å’ŒtrimToEmpty()çš„åŒºåˆ«)ï¼š 
 
 StringUtils.stripToNull(null)                  = "" 
 
@@ -238,73 +237,73 @@ StringUtils.stripToNull("     dd       ")           = "dd"
 
 11.public static String strip(String str, String stripChars) 
 
-È¥µôstrÁ½¶ËµÄÔÚstripCharsÖĞµÄ×Ö·û¡£ 
+å»æ‰strä¸¤ç«¯çš„åœ¨stripCharsä¸­çš„å­—ç¬¦ã€‚ 
 
-Èç¹ûstrÎªnull»òµÈÓÚ""£¬Ôò·µ»ØËü±¾Éí£» 
+å¦‚æœsträ¸ºnullæˆ–ç­‰äº""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº«ï¼› 
 
-Èç¹ûstripCharsÎªnull»ò""£¬Ôò·µ»Østrip(String str)¡£ 
+å¦‚æœstripCharsä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›strip(String str)ã€‚ 
 
 12.public static String stripStart(String str, String stripChars) 
 
-ºÍ11ÏàËÆ£¬È¥µôstrÇ°¶ËµÄÔÚstripCharsÖĞµÄ×Ö·û¡£ 
+å’Œ11ç›¸ä¼¼ï¼Œå»æ‰strå‰ç«¯çš„åœ¨stripCharsä¸­çš„å­—ç¬¦ã€‚ 
 
 13.public static String stripEnd(String str, String stripChars) 
 
-ºÍ11ÏàËÆ£¬È¥µôstrÄ©¶ËµÄÔÚstripCharsÖĞµÄ×Ö·û¡£ 
+å’Œ11ç›¸ä¼¼ï¼Œå»æ‰stræœ«ç«¯çš„åœ¨stripCharsä¸­çš„å­—ç¬¦ã€‚ 
 
 14.public static String[] stripAll(String[] strs) 
 
-¶Ô×Ö·û´®Êı×éÖĞµÄÃ¿¸ö×Ö·û´®½øĞĞstrip(String str)£¬È»ºó·µ»Ø¡£ 
+å¯¹å­—ç¬¦ä¸²æ•°ç»„ä¸­çš„æ¯ä¸ªå­—ç¬¦ä¸²è¿›è¡Œstrip(String str)ï¼Œç„¶åè¿”å›ã€‚ 
 
-Èç¹ûstrsÎªnull»òstrs³¤¶ÈÎª0£¬Ôò·µ»Østrs±¾Éí 
+å¦‚æœstrsä¸ºnullæˆ–strsé•¿åº¦ä¸º0ï¼Œåˆ™è¿”å›strsæœ¬èº« 
 
 15.public static String[] stripAll(String[] strs, String stripChars) 
 
-¶Ô×Ö·û´®Êı×éÖĞµÄÃ¿¸ö×Ö·û´®½øĞĞstrip(String str, String stripChars)£¬È»ºó·µ»Ø¡£ 
+å¯¹å­—ç¬¦ä¸²æ•°ç»„ä¸­çš„æ¯ä¸ªå­—ç¬¦ä¸²è¿›è¡Œstrip(String str, String stripChars)ï¼Œç„¶åè¿”å›ã€‚ 
 
-Èç¹ûstrsÎªnull»òstrs³¤¶ÈÎª0£¬Ôò·µ»Østrs±¾Éí 
+å¦‚æœstrsä¸ºnullæˆ–strsé•¿åº¦ä¸º0ï¼Œåˆ™è¿”å›strsæœ¬èº« 
 
 16.public static boolean equals(String str1, String str2) 
 
-±È½ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£¬Èç¹ûÁ½¸ö¾ùÎª¿ÕÔòÒ²ÈÏÎªÏàµÈ¡£ 
+æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œå¦‚æœä¸¤ä¸ªå‡ä¸ºç©ºåˆ™ä¹Ÿè®¤ä¸ºç›¸ç­‰ã€‚ 
 
 17.public static boolean equalsIgnoreCase(String str1, String str2) 
 
-±È½ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£¬²»Çø·Ö´óĞ¡Ğ´£¬Èç¹ûÁ½¸ö¾ùÎª¿ÕÔòÒ²ÈÏÎªÏàµÈ¡£ 
+æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œä¸åŒºåˆ†å¤§å°å†™ï¼Œå¦‚æœä¸¤ä¸ªå‡ä¸ºç©ºåˆ™ä¹Ÿè®¤ä¸ºç›¸ç­‰ã€‚ 
 
 18.public static int indexOf(String str, char searchChar) 
 
-·µ»Ø×Ö·ûsearchCharÔÚ×Ö·û´®strÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ¡£ 
+è¿”å›å­—ç¬¦searchCharåœ¨å­—ç¬¦ä¸²strä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ã€‚ 
 
-Èç¹ûsearchCharÃ»ÓĞÔÚstrÖĞ³öÏÖÔò·µ»Ø-1£¬ 
+å¦‚æœsearchCharæ²¡æœ‰åœ¨strä¸­å‡ºç°åˆ™è¿”å›-1ï¼Œ 
 
-Èç¹ûstrÎªnull»ò""£¬ÔòÒ²·µ»Ø-1 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œåˆ™ä¹Ÿè¿”å›-1 
 
 19.public static int indexOf(String str, char searchChar, int startPos) 
 
-·µ»Ø×Ö·ûsearchChar´ÓstartPos¿ªÊ¼ÔÚ×Ö·û´®strÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ¡£ 
+è¿”å›å­—ç¬¦searchCharä»startPoså¼€å§‹åœ¨å­—ç¬¦ä¸²strä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ã€‚ 
 
-Èç¹û´ÓstartPos¿ªÊ¼searchCharÃ»ÓĞÔÚstrÖĞ³öÏÖÔò·µ»Ø-1£¬ 
+å¦‚æœä»startPoså¼€å§‹searchCharæ²¡æœ‰åœ¨strä¸­å‡ºç°åˆ™è¿”å›-1ï¼Œ 
 
-Èç¹ûstrÎªnull»ò""£¬ÔòÒ²·µ»Ø-1 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œåˆ™ä¹Ÿè¿”å›-1 
 
 20.public static int indexOf(String str, String searchStr) 
 
-·µ»Ø×Ö·û´®searchStrÔÚ×Ö·û´®strÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ¡£ 
+è¿”å›å­—ç¬¦ä¸²searchStråœ¨å­—ç¬¦ä¸²strä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ã€‚ 
 
-Èç¹ûstrÎªnull»òsearchStrÎªnullÔò·µ»Ø-1£¬ 
+å¦‚æœsträ¸ºnullæˆ–searchSträ¸ºnullåˆ™è¿”å›-1ï¼Œ 
 
-Èç¹ûsearchStrÎª"",ÇÒstrÎª²»Îªnull£¬Ôò·µ»Ø0£¬ 
+å¦‚æœsearchSträ¸º"",ä¸”strä¸ºä¸ä¸ºnullï¼Œåˆ™è¿”å›0ï¼Œ 
 
-Èç¹ûsearchStr²»ÔÚstrÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœsearchSträ¸åœ¨strä¸­ï¼Œåˆ™è¿”å›-1 
 
 21.public static int ordinalIndexOf(String str, String searchStr, int ordinal) 
 
-·µ»Ø×Ö·û´®searchStrÔÚ×Ö·û´®strÖĞµÚordinal´Î³öÏÖµÄÎ»ÖÃ¡£ 
+è¿”å›å­—ç¬¦ä¸²searchStråœ¨å­—ç¬¦ä¸²strä¸­ç¬¬ordinalæ¬¡å‡ºç°çš„ä½ç½®ã€‚ 
 
-Èç¹ûstr=null»òsearchStr=null»òordinal<=0Ôò·µ»Ø-1 
+å¦‚æœstr=nullæˆ–searchStr=nullæˆ–ordinal<=0åˆ™è¿”å›-1 
 
-¾ÙÀı(*´ú±íÈÎÒâ×Ö·û´®)£º 
+ä¸¾ä¾‹(*ä»£è¡¨ä»»æ„å­—ç¬¦ä¸²)ï¼š 
 
 StringUtils.ordinalIndexOf(null, *, *)          = -1 
 
@@ -332,9 +331,9 @@ StringUtils.ordinalIndexOf("aabaabaa", "", 2)   = 0
 
 22. public static int indexOf(String str, String searchStr, int startPos) 
 
-·µ»Ø×Ö·û´®searchStr´ÓstartPos¿ªÊ¼ÔÚ×Ö·û´®strÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ¡£ 
+è¿”å›å­—ç¬¦ä¸²searchSträ»startPoså¼€å§‹åœ¨å­—ç¬¦ä¸²strä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ã€‚ 
 
-¾ÙÀı(*´ú±íÈÎÒâ×Ö·û´®)£º 
+ä¸¾ä¾‹(*ä»£è¡¨ä»»æ„å­—ç¬¦ä¸²)ï¼š 
 
 StringUtils.indexOf(null, *, *)          = -1 
 
@@ -360,39 +359,39 @@ StringUtils.indexOf("abc", "", 9)        = 3
 
 23.public static int lastIndexOf(String str, char searchChar) 
 
-»ù±¾Ô­ÀíÍ¬18¡£ 
+åŸºæœ¬åŸç†åŒ18ã€‚ 
 
 24.public static int lastIndexOf(String str, char searchChar, int startPos) 
 
-»ù±¾Ô­ÀíÍ¬19¡£ 
+åŸºæœ¬åŸç†åŒ19ã€‚ 
 
 25.public static int lastIndexOf(String str, String searchStr) 
 
-»ù±¾Ô­ÀíÍ¬20¡£ 
+åŸºæœ¬åŸç†åŒ20ã€‚ 
 
 26.public static int lastIndexOf(String str, String searchStr, int startPos) 
 
-»ù±¾Ô­ÀíÍ¬22¡£ 
+åŸºæœ¬åŸç†åŒ22ã€‚ 
 
 
 
 27.public static boolean contains(String str, char searchChar) 
 
-ÅĞ¶Ï×Ö·û´®strÖĞÊÇ·ñ°üº¬×Ö·ûsearchChar¡£ 
+åˆ¤æ–­å­—ç¬¦ä¸²strä¸­æ˜¯å¦åŒ…å«å­—ç¬¦searchCharã€‚ 
 
-Èç¹ûstrÎªnull»ò""£¬·µ»Øfalse£» 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œè¿”å›falseï¼› 
 
-Èç¹ûsearchChar²»ÔÚstrÖĞ£¬·µ»Øfalse¡£ 
+å¦‚æœsearchCharä¸åœ¨strä¸­ï¼Œè¿”å›falseã€‚ 
 
 28.public static boolean contains(String str, String searchStr) 
 
-ÅĞ¶Ï×Ö·û´®strÊÇ·ñ°üº¬×Ö·û´®searchStr¡£ 
+åˆ¤æ–­å­—ç¬¦ä¸²stræ˜¯å¦åŒ…å«å­—ç¬¦ä¸²searchStrã€‚ 
 
-Èç¹ûstrÎªnull»òsearchStrÎªnull£¬·µ»Øfalse£» 
+å¦‚æœsträ¸ºnullæˆ–searchSträ¸ºnullï¼Œè¿”å›falseï¼› 
 
-Èç¹ûstrÎª""£¬²¢ÇÒsearchStrÎª""£¬·µ»Øtrue 
+å¦‚æœsträ¸º""ï¼Œå¹¶ä¸”searchSträ¸º""ï¼Œè¿”å›true 
 
-¾ÙÀı£º 
+ä¸¾ä¾‹ï¼š 
 
 StringUtils.contains("", "")       = true 
 
@@ -404,19 +403,19 @@ StringUtils.contains("dfg", "gz") = false
 
 29.public static boolean containsIgnoreCase(String str, String searchStr) 
 
-ÅĞ¶Ï×Ö·û´®strÊÇ·ñ°üº¬×Ö·û´®searchStr£¬²»Çø·Ö´óĞ¡Ğ´¡£ 
+åˆ¤æ–­å­—ç¬¦ä¸²stræ˜¯å¦åŒ…å«å­—ç¬¦ä¸²searchStrï¼Œä¸åŒºåˆ†å¤§å°å†™ã€‚ 
 
-ºÍ28ÀàËÆ¡£ 
+å’Œ28ç±»ä¼¼ã€‚ 
 
 30.public static int indexOfAny(String str, char[] searchChars) 
 
-ÕÒ³ö×Ö·ûÊı×ésearchCharsÖĞµÄ×Ö·ûµÚÒ»´Î³öÏÖÔÚ×Ö·û´®strÖĞµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦æ•°ç»„searchCharsä¸­çš„å­—ç¬¦ç¬¬ä¸€æ¬¡å‡ºç°åœ¨å­—ç¬¦ä¸²strä¸­çš„ä½ç½®ã€‚ 
 
-Èç¹û×Ö·ûÊı×éÖĞµÄ×Ö·û¶¼²»ÔÚ×Ö·û´®ÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦æ•°ç»„ä¸­çš„å­—ç¬¦éƒ½ä¸åœ¨å­—ç¬¦ä¸²ä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹û×Ö·û´®Îªnull»ò""£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.indexOfAny(null, *)                 = -1 
 
@@ -434,13 +433,13 @@ StringUtils.indexOfAny("bbeegg", ['a','f',' ']) = -1
 
 31.public static int indexOfAny(String str, String searchChars) 
 
-ÕÒ³ö×Ö·û´®searchCharsÖĞµÄ×Ö·ûµÚÒ»´Î³öÏÖÔÚ×Ö·û´®strÖĞµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦ä¸²searchCharsä¸­çš„å­—ç¬¦ç¬¬ä¸€æ¬¡å‡ºç°åœ¨å­—ç¬¦ä¸²strä¸­çš„ä½ç½®ã€‚ 
 
-Èç¹û×Ö·û´®searchCharsÖĞµÄ×Ö·û¶¼²»ÔÚ×Ö·û´®strÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²searchCharsä¸­çš„å­—ç¬¦éƒ½ä¸åœ¨å­—ç¬¦ä¸²strä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹ûsearchChars»òstrÎªnull»òÎª""£¬Ôò·µ»Ø-1 
+å¦‚æœsearchCharsæˆ–strä¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.indexOfAny(null, *)         = -1 
 
@@ -460,13 +459,13 @@ StringUtils.indexOfAny("bbeegg", "af ") = -1
 
 32.public static int indexOfAnyBut(String str, char[] searchChars) 
 
-ÕÒ³ö×Ö·û´®strÖĞ²»ÔÚ×Ö·ûÊı×ésearchCharsÖĞµÄµÚÒ»¸ö×Ö·ûµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦ä¸²strä¸­ä¸åœ¨å­—ç¬¦æ•°ç»„searchCharsä¸­çš„ç¬¬ä¸€ä¸ªå­—ç¬¦çš„ä½ç½®ã€‚ 
 
-Èç¹û×Ö·û´®ÖĞµÄËùÓĞ×Ö·û¶¼ÔÚ×Ö·ûÊı×éÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²ä¸­çš„æ‰€æœ‰å­—ç¬¦éƒ½åœ¨å­—ç¬¦æ•°ç»„ä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹û×Ö·û´®Îªnull»ò""£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.indexOfAnyBut(null, *)                 = -1 
 
@@ -484,13 +483,13 @@ StringUtils.indexOfAnyBut("bbeegg", ['a','f',' ']) = 0
 
 33.public static int indexOfAnyBut(String str, String searchChars) 
 
-ÕÒ³ö×Ö·û´®strÖĞ²»ÔÚ×Ö·û´®searchCharsÖĞµÄµÚÒ»¸ö×Ö·ûµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦ä¸²strä¸­ä¸åœ¨å­—ç¬¦ä¸²searchCharsä¸­çš„ç¬¬ä¸€ä¸ªå­—ç¬¦çš„ä½ç½®ã€‚ 
 
-Èç¹û×Ö·û´®strÖĞµÄËùÓĞ×Ö·û¶¼ÔÚ×Ö·û´®searchCharsÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²strä¸­çš„æ‰€æœ‰å­—ç¬¦éƒ½åœ¨å­—ç¬¦ä¸²searchCharsä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹û×Ö·û´®str»òsearchCharsÎªnull»ò""£¬Ôò·µ»Ø-1 
+å¦‚æœå­—ç¬¦ä¸²stræˆ–searchCharsä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.indexOfAnyBut(null, *)         = -1 
 
@@ -510,11 +509,11 @@ StringUtils.indexOfAnyBut("bbeegg", "af ") = 0
 
 34.public static boolean containsOnly(String str, char[] valid) 
 
-ÅĞ¶ÏÊÇ·ñ×Ö·û´®str½ö°üº¬×Ö·ûÊı×évalidÖĞµÄ×Ö·û£¬¼´×Ö·û´®ÖĞµÄ×Ö·ûÊÇ·ñ¶¼ÔÚ×Ö·ûÊı×éÖĞ¡£ 
+åˆ¤æ–­æ˜¯å¦å­—ç¬¦ä¸²strä»…åŒ…å«å­—ç¬¦æ•°ç»„validä¸­çš„å­—ç¬¦ï¼Œå³å­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦æ˜¯å¦éƒ½åœ¨å­—ç¬¦æ•°ç»„ä¸­ã€‚ 
 
-Èç¹ûstrÎªnull£¬Ôò·µ»Øfalse£»Èç¹ûstrÎª""£¬Ôò·µ»Øtrue 
+å¦‚æœsträ¸ºnullï¼Œåˆ™è¿”å›falseï¼›å¦‚æœsträ¸º""ï¼Œåˆ™è¿”å›true 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.containsOnly(null, *))              = false 
 
@@ -532,11 +531,11 @@ StringUtils.containsOnly("bbeegg", []))         = false
 
 35.public static boolean containsOnly(String str, String validChars) 
 
-ÅĞ¶ÏÊÇ·ñ×Ö·û´®str½ö°üº¬×Ö·û´®validCharsÖĞµÄ×Ö·û£¬ 
+åˆ¤æ–­æ˜¯å¦å­—ç¬¦ä¸²strä»…åŒ…å«å­—ç¬¦ä¸²validCharsä¸­çš„å­—ç¬¦ï¼Œ 
 
-¼´×Ö·û´®strÖĞµÄ×Ö·ûÊÇ·ñ¶¼ÔÚ×Ö·û´®validCharsÖĞ¡£ 
+å³å­—ç¬¦ä¸²strä¸­çš„å­—ç¬¦æ˜¯å¦éƒ½åœ¨å­—ç¬¦ä¸²validCharsä¸­ã€‚ 
 
-ºÍ34ÀàËÆ£¬¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+å’Œ34ç±»ä¼¼ï¼Œä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.containsOnly(null, *)       = false 
 
@@ -556,9 +555,9 @@ StringUtils.containsOnly("afg", "")     = false
 
 36.public static boolean containsNone(String str, char[] invalidChars) 
 
-ÅĞ¶ÏÊÇ·ñ×Ö·û´®str²»°üº¬×Ö·ûÊı×éinvalidCharsÖĞµÄ×Ö·û£¬Èç¹ûº¬ÓĞÔò·µ»Øfalse¡£ 
+åˆ¤æ–­æ˜¯å¦å­—ç¬¦ä¸²strä¸åŒ…å«å­—ç¬¦æ•°ç»„invalidCharsä¸­çš„å­—ç¬¦ï¼Œå¦‚æœå«æœ‰åˆ™è¿”å›falseã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.containsNone(null, *)               = true 
 
@@ -578,9 +577,9 @@ StringUtils.containsNone(" ", ['a','f',' '])    = false
 
 37.public static boolean containsNone(String str, String invalidChars) 
 
-ÅĞ¶ÏÊÇ·ñ×Ö·û´®str²»°üº¬×Ö·û´®invalidCharsÖĞµÄ×Ö·û£¬Èç¹ûº¬ÓĞÔò·µ»Øfalse¡£ 
+åˆ¤æ–­æ˜¯å¦å­—ç¬¦ä¸²strä¸åŒ…å«å­—ç¬¦ä¸²invalidCharsä¸­çš„å­—ç¬¦ï¼Œå¦‚æœå«æœ‰åˆ™è¿”å›falseã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.containsNone(null, *)       = true 
 
@@ -602,13 +601,13 @@ StringUtils.containsNone(" ", "af ")    = false
 
 38.public static int indexOfAny(String str, String[] searchStrs) 
 
-ÕÒ³ö×Ö·û´®Êı×ésearchStrsÖĞµÄ×Ö·û´®µÚÒ»´Î³öÏÖÔÚ×Ö·û´®strÖĞµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦ä¸²æ•°ç»„searchStrsä¸­çš„å­—ç¬¦ä¸²ç¬¬ä¸€æ¬¡å‡ºç°åœ¨å­—ç¬¦ä¸²strä¸­çš„ä½ç½®ã€‚ 
 
-Èç¹ûÊı×éÖĞÃ»ÓĞ×Ö·û´®ÔÚstrÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœæ•°ç»„ä¸­æ²¡æœ‰å­—ç¬¦ä¸²åœ¨strä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹ûÊı×éÎªnull»ò³¤¶ÈÎª0£¬Ôò·µ»Ø-1 
+å¦‚æœæ•°ç»„ä¸ºnullæˆ–é•¿åº¦ä¸º0ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.indexOfAny(null, *)                     = -1 
 
@@ -628,13 +627,13 @@ StringUtils.indexOfAny("ghasdf", ["as","df","yy"]) = 2
 
 39.public static int lastIndexOfAny(String str, String[] searchStrs) 
 
-ÕÒ³ö×Ö·û´®Êı×ésearchStrsÖĞµÄ×Ö·û´®×îºóÒ»´Î³öÏÖÔÚ×Ö·û´®strÖĞµÄÎ»ÖÃ¡£ 
+æ‰¾å‡ºå­—ç¬¦ä¸²æ•°ç»„searchStrsä¸­çš„å­—ç¬¦ä¸²æœ€åä¸€æ¬¡å‡ºç°åœ¨å­—ç¬¦ä¸²strä¸­çš„ä½ç½®ã€‚ 
 
-Èç¹ûÊı×éÖĞÃ»ÓĞ×Ö·û´®ÔÚstrÖĞ£¬Ôò·µ»Ø-1 
+å¦‚æœæ•°ç»„ä¸­æ²¡æœ‰å­—ç¬¦ä¸²åœ¨strä¸­ï¼Œåˆ™è¿”å›-1 
 
-Èç¹ûÊı×éÎªnull»ò³¤¶ÈÎª0£¬Ôò·µ»Ø-1 
+å¦‚æœæ•°ç»„ä¸ºnullæˆ–é•¿åº¦ä¸º0ï¼Œåˆ™è¿”å›-1 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.lastIndexOfAny(null, *)                     = -1 
 
@@ -656,13 +655,13 @@ StringUtils.lastIndexOfAny("ghasdf", ["as","df",""])    = 6
 
 40.public static String substring(String str, int start) 
 
-µÃµ½×Ö·û´®strµÄ×Ó´®¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strçš„å­ä¸²ã€‚ 
 
-Èç¹ûstartĞ¡ÓÚ0£¬Î»ÖÃÊÇ´ÓºóÍùÇ°ÊıµÄµÚ|start|¸ö 
+å¦‚æœstartå°äº0ï¼Œä½ç½®æ˜¯ä»åå¾€å‰æ•°çš„ç¬¬|start|ä¸ª 
 
-Èç¹ûstrÎªnull»ò""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substring(null, *)     = null 
 
@@ -684,15 +683,15 @@ StringUtils.substring("asdf", -8)) = "asdf"
 
 41.public static String substring(String str, int start, int end) 
 
-µÃµ½×Ö·û´®strµÄ×Ó´®¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strçš„å­ä¸²ã€‚ 
 
-Èç¹ûstartĞ¡ÓÚ0£¬Î»ÖÃÊÇ´ÓºóÍùÇ°ÊıµÄµÚ|start|¸ö£¬ 
+å¦‚æœstartå°äº0ï¼Œä½ç½®æ˜¯ä»åå¾€å‰æ•°çš„ç¬¬|start|ä¸ªï¼Œ 
 
-Èç¹ûendĞ¡ÓÚ0£¬Î»ÖÃÊÇ´ÓºóÍùÇ°ÊıµÄµÚ|end|¸ö£¬ 
+å¦‚æœendå°äº0ï¼Œä½ç½®æ˜¯ä»åå¾€å‰æ•°çš„ç¬¬|end|ä¸ªï¼Œ 
 
-Èç¹ûstrÎªnull»ò""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substring(null, *, *)     = null 
 
@@ -718,13 +717,13 @@ StringUtils.substring("asdf", -8, 5) = "asdf"
 
 42.public static String left(String str, int len) 
 
-µÃµ½×Ö·û´®str´Ó×ó±ßÊılen³¤¶ÈµÄ×Ó´®¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strä»å·¦è¾¹æ•°lené•¿åº¦çš„å­ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull»òÎª""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûlenĞ¡ÓÚ0£¬Ôò·µ»Ø"" 
+å¦‚æœlenå°äº0ï¼Œåˆ™è¿”å›"" 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.left(null, *)    = null 
 
@@ -740,13 +739,13 @@ StringUtils.left("asdf", = "asdf"
 
 43.public static String right(String str, int len) 
 
-µÃµ½×Ö·û´®str´ÓÓÒ±ßÊılen³¤¶ÈµÄ×Ó´®¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strä»å³è¾¹æ•°lené•¿åº¦çš„å­ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull»òÎª""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûlenĞ¡ÓÚ0£¬Ôò·µ»Ø"" 
+å¦‚æœlenå°äº0ï¼Œåˆ™è¿”å›"" 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.right(null, *)    = null 
 
@@ -762,15 +761,15 @@ StringUtils.right("asdf", = "asdf"
 
 44.public static String mid(String str, int pos, int len) 
 
-µÃµ½×Ö·û´®str´Ópos¿ªÊ¼len³¤¶ÈµÄ×Ó´®¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strä»poså¼€å§‹lené•¿åº¦çš„å­ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull»òÎª""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûlenĞ¡ÓÚ0»òpos´óÓÚsrtµÄ³¤¶È£¬Ôò·µ»Ø"" 
+å¦‚æœlenå°äº0æˆ–poså¤§äºsrtçš„é•¿åº¦ï¼Œåˆ™è¿”å›"" 
 
-Èç¹ûposĞ¡ÓÚ0£¬ÔòposÉèÎª0 
+å¦‚æœposå°äº0ï¼Œåˆ™posè®¾ä¸º0 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.mid(null, *, *)     = null 
 
@@ -790,13 +789,13 @@ StringUtils.mid("asdf", 0, -1))    = ""
 
 45.public static String substringBefore(String str, String separator) 
 
-µÃµ½×Ö·û´®strµÄÔÚ×Ö·û´®separator³öÏÖÇ°µÄ×Ö´®£¬ÇÒseparator²»°üÀ¨ÔÚÄÚ¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strçš„åœ¨å­—ç¬¦ä¸²separatorå‡ºç°å‰çš„å­—ä¸²ï¼Œä¸”separatorä¸åŒ…æ‹¬åœ¨å†…ã€‚ 
 
-Èç¹ûstrÎªnull»òÎª""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûseparatorÎªnull£¬Ôò·µ»Østr±¾Éí 
+å¦‚æœseparatorä¸ºnullï¼Œåˆ™è¿”å›stræœ¬èº« 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substringBefore(null, *)            = null 
 
@@ -822,13 +821,13 @@ StringUtils.substringBefore("abbbabbba", "bb")) = "a"
 
 46.public static String substringAfter(String str, String separator) 
 
-µÃµ½×Ö·û´®strµÄÔÚ×Ö·û´®separator³öÏÖºóµÄ×Ö´®£¬ÇÒseparator²»°üÀ¨ÔÚÄÚ¡£ 
+å¾—åˆ°å­—ç¬¦ä¸²strçš„åœ¨å­—ç¬¦ä¸²separatorå‡ºç°åçš„å­—ä¸²ï¼Œä¸”separatorä¸åŒ…æ‹¬åœ¨å†…ã€‚ 
 
-Èç¹ûstrÎªnull»òÎª""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœsträ¸ºnullæˆ–ä¸º""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûseparatorÎªnull£¬Ôò·µ»Ø"" 
+å¦‚æœseparatorä¸ºnullï¼Œåˆ™è¿”å›"" 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substringAfter(null, *)           = null 
 
@@ -854,23 +853,23 @@ StringUtils.substringAfter("abbbabbba", "bb"))=    "babbba"
 
 47.public static String substringBeforeLast(String str, String separator) 
 
-ºÍ45ÀàËÆ£¬µÃµ½×Ö·û´®strµÄÔÚ×Ö·û´®separator×îºóÒ»´Î³öÏÖÇ°µÄ×Ö´®¡£ 
+å’Œ45ç±»ä¼¼ï¼Œå¾—åˆ°å­—ç¬¦ä¸²strçš„åœ¨å­—ç¬¦ä¸²separatoræœ€åä¸€æ¬¡å‡ºç°å‰çš„å­—ä¸²ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 48.public static String substringAfterLast(String str, String separator) 
 
-ºÍ46ÀàËÆ£¬µÃµ½×Ö·û´®strµÄÔÚ×Ö·û´®separator×îºóÒ»´Î³öÏÖºóµÄ×Ö´®¡£ 
+å’Œ46ç±»ä¼¼ï¼Œå¾—åˆ°å­—ç¬¦ä¸²strçš„åœ¨å­—ç¬¦ä¸²separatoræœ€åä¸€æ¬¡å‡ºç°åçš„å­—ä¸²ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 49.public static String substringBetween(String str, String tag) 
 
-µÃµ½strÖĞµÄÔÚÁ½¸ö×Ö·û´®tagÖĞ¼äµÄ×Ö·û´®£¬¼´strÖĞµÄtagËù¼ĞµÄ´®¡£ 
+å¾—åˆ°strä¸­çš„åœ¨ä¸¤ä¸ªå­—ç¬¦ä¸²tagä¸­é—´çš„å­—ç¬¦ä¸²ï¼Œå³strä¸­çš„tagæ‰€å¤¹çš„ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull»òtagÎªnull£¬·µ»Ønull 
+å¦‚æœsträ¸ºnullæˆ–tagä¸ºnullï¼Œè¿”å›null 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substringBetween(null, *)               = null 
 
@@ -892,11 +891,11 @@ StringUtils.substringBetween("dfasdfasgdf", "df")) = "as"
 
 50.public static String substringBetween(String str, String open, String close) 
 
-µÃµ½strÖĞµÄÔÚÁ½¸ö×Ö·û´®openºÍcloseÖĞ¼äµÄ×Ö·û´®£¬¼´openºÍcloseËù¼ĞµÄ´®¡£ 
+å¾—åˆ°strä¸­çš„åœ¨ä¸¤ä¸ªå­—ç¬¦ä¸²openå’Œcloseä¸­é—´çš„å­—ç¬¦ä¸²ï¼Œå³openå’Œcloseæ‰€å¤¹çš„ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull»òopenÎªnull»òcloseÎªnull£¬·µ»Ønull 
+å¦‚æœsträ¸ºnullæˆ–openä¸ºnullæˆ–closeä¸ºnullï¼Œè¿”å›null 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.substringBetween(null, *, *)             = null 
 
@@ -922,27 +921,27 @@ StringUtils.substringBetween("a[sd]f", "",""))            =    ""
 
 51.public static String[] substringsBetween(String str, String open, String close) 
 
-µÃµ½strÖĞµÄÔÚÁ½¸ö×Ö·û´®openºÍcloseÖĞ¼äµÄ×Ö·û´®£¬¼´openºÍcloseËù¼ĞµÄ´®£¬ 
+å¾—åˆ°strä¸­çš„åœ¨ä¸¤ä¸ªå­—ç¬¦ä¸²openå’Œcloseä¸­é—´çš„å­—ç¬¦ä¸²ï¼Œå³openå’Œcloseæ‰€å¤¹çš„ä¸²ï¼Œ 
 
-°ÑËùÓĞ·ûºÏµÄ½á¹û·ÅÔÚÊı×éÖĞ·µ»Ø¡£ 
+æŠŠæ‰€æœ‰ç¬¦åˆçš„ç»“æœæ”¾åœ¨æ•°ç»„ä¸­è¿”å›ã€‚ 
 
-ºÍ50ÀàËÆ£¬µ«ÊÇ·µ»ØÁËËùÓĞµÄ½á¹û(50Ö»·µ»ØÁËµÚÒ»¸öÆ¥ÅäµÄ½á¹û)¡£ 
+å’Œ50ç±»ä¼¼ï¼Œä½†æ˜¯è¿”å›äº†æ‰€æœ‰çš„ç»“æœ(50åªè¿”å›äº†ç¬¬ä¸€ä¸ªåŒ¹é…çš„ç»“æœ)ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 
 
 52.public static String[] split(String str) 
 
-°Ñ×Ö·û´®²ğ·Ö³ÉÒ»¸ö×Ö·û´®Êı×é£¬ÓÃ¿Õ°×·û(whitespace)×÷Îª·Ö¸ô·û¡£ 
+æŠŠå­—ç¬¦ä¸²æ‹†åˆ†æˆä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„ï¼Œç”¨ç©ºç™½ç¬¦(whitespace)ä½œä¸ºåˆ†éš”ç¬¦ã€‚ 
 
-WhitespaceÊÇÕâÑù¶¨ÒåµÄ {@link Character#isWhitespace(char)} 
+Whitespaceæ˜¯è¿™æ ·å®šä¹‰çš„ {@link Character#isWhitespace(char)} 
 
-Èç¹û×Ö·û´®Îªnull£¬·µ»Ønull 
+å¦‚æœå­—ç¬¦ä¸²ä¸ºnullï¼Œè¿”å›null 
 
-Èç¹û×Ö·û´®Îª""£¬·µ»Ø¿ÕÊı×é{} 
+å¦‚æœå­—ç¬¦ä¸²ä¸º""ï¼Œè¿”å›ç©ºæ•°ç»„{} 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.split(null)                   = null 
 
@@ -966,13 +965,13 @@ StringUtils.split(" as "))                = {"as"}
 
 53.public static String[] split(String str, char separatorChar) 
 
-°Ñ×Ö·û´®²ğ·Ö³ÉÒ»¸ö×Ö·û´®Êı×é£¬ÓÃÖ¸¶¨µÄ×Ö·ûseparatorChar×÷Îª·Ö¸ô·û¡£ 
+æŠŠå­—ç¬¦ä¸²æ‹†åˆ†æˆä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„ï¼Œç”¨æŒ‡å®šçš„å­—ç¬¦separatorCharä½œä¸ºåˆ†éš”ç¬¦ã€‚ 
 
-Èç¹û×Ö·û´®Îªnull£¬·µ»Ønull 
+å¦‚æœå­—ç¬¦ä¸²ä¸ºnullï¼Œè¿”å›null 
 
-Èç¹û×Ö·û´®Îª""£¬·µ»Ø¿ÕÊı×é{} 
+å¦‚æœå­—ç¬¦ä¸²ä¸º""ï¼Œè¿”å›ç©ºæ•°ç»„{} 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.split(null, *)           = null 
 
@@ -994,17 +993,17 @@ StringUtils.split(" as ",' '))       = {"as"}
 
 54.public static String[] split(String str, String separatorChars) 
 
-°Ñ×Ö·û´®²ğ·Ö³ÉÒ»¸ö×Ö·û´®Êı×é£¬ÓÃÖ¸¶¨µÄ×Ö·û´®separatorChars×÷Îª·Ö¸ô·û¡£ 
+æŠŠå­—ç¬¦ä¸²æ‹†åˆ†æˆä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„ï¼Œç”¨æŒ‡å®šçš„å­—ç¬¦ä¸²separatorCharsä½œä¸ºåˆ†éš”ç¬¦ã€‚ 
 
-Èç¹û×Ö·û´®strÎªnull£¬·µ»Ønull 
+å¦‚æœå­—ç¬¦ä¸²strä¸ºnullï¼Œè¿”å›null 
 
-Èç¹û×Ö·û´®strÎª""£¬·µ»Ø¿ÕÊı×é{} 
+å¦‚æœå­—ç¬¦ä¸²strä¸º""ï¼Œè¿”å›ç©ºæ•°ç»„{} 
 
-Èç¹ûseparatorCharsÎªnull£¬ÔòÄ¬ÈÏÎª¿Õ°×·û 
+å¦‚æœseparatorCharsä¸ºnullï¼Œåˆ™é»˜è®¤ä¸ºç©ºç™½ç¬¦ 
 
-ºÍ53ÀàËÆ¡£ 
+å’Œ53ç±»ä¼¼ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.split("as /rdf /t yy",null)) = {"as","df","yy"} 
 
@@ -1014,19 +1013,19 @@ StringUtils.split("as",""))               = {"as"}
 
 55.public static String[] split(String str, String separatorChars, int max) 
 
-°Ñ×Ö·û´®²ğ·Ö³ÉÒ»¸ö×Ö·û´®Êı×é£¬ÓÃÖ¸¶¨µÄ×Ö·û´®separatorChars×÷Îª·Ö¸ô·û£¬ 
+æŠŠå­—ç¬¦ä¸²æ‹†åˆ†æˆä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„ï¼Œç”¨æŒ‡å®šçš„å­—ç¬¦ä¸²separatorCharsä½œä¸ºåˆ†éš”ç¬¦ï¼Œ 
 
-Êı×éµÄ×î´ó³¤¶ÈÎªmax¡£ 
+æ•°ç»„çš„æœ€å¤§é•¿åº¦ä¸ºmaxã€‚ 
 
-Èç¹û×Ö·û´®strÎªnull£¬·µ»Ønull 
+å¦‚æœå­—ç¬¦ä¸²strä¸ºnullï¼Œè¿”å›null 
 
-Èç¹û×Ö·û´®strÎª""£¬·µ»Ø¿ÕÊı×é{} 
+å¦‚æœå­—ç¬¦ä¸²strä¸º""ï¼Œè¿”å›ç©ºæ•°ç»„{} 
 
-Èç¹ûseparatorCharsÎªnull£¬ÔòÄ¬ÈÏÎª¿Õ°×·û 
+å¦‚æœseparatorCharsä¸ºnullï¼Œåˆ™é»˜è®¤ä¸ºç©ºç™½ç¬¦ 
 
-Èç¹ûmaxĞ¡ÓÚµÈÓÚ0£¬ÈÏÎªÊÇÃ»ÓĞÏŞÖÆ 
+å¦‚æœmaxå°äºç­‰äº0ï¼Œè®¤ä¸ºæ˜¯æ²¡æœ‰é™åˆ¶ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.split(null, *, *)              = null 
 
@@ -1050,21 +1049,21 @@ StringUtils.split("as","",2))              = {"as"}
 
 56.public static String[] splitByWholeSeparator(String str, String separator) 
 
-¸öÈËÈÏÎªºÍ54¹¦ÄÜÒ»Ñù¡£Çø±ğÓĞ´ı·¢¾ò¡£ 
+ä¸ªäººè®¤ä¸ºå’Œ54åŠŸèƒ½ä¸€æ ·ã€‚åŒºåˆ«æœ‰å¾…å‘æ˜ã€‚ 
 
 57.public static String[] splitByWholeSeparator( String str, String separator, int max ) 
 
-¸öÈËÈÏÎªºÍ55¹¦ÄÜÒ»Ñù¡£Çø±ğÓĞ´ı·¢¾ò¡£ 
+ä¸ªäººè®¤ä¸ºå’Œ55åŠŸèƒ½ä¸€æ ·ã€‚åŒºåˆ«æœ‰å¾…å‘æ˜ã€‚ 
 
 58.public static String[] splitPreserveAllTokens(String str) 
 
-°Ñ×Ö·û´®str²ğ·Ö³ÉÒ»¸öÊı×é£¬ÓÃ¿Õ°×·û(whitespace)×÷Îª·Ö¸ô·û£¬±£ÁôËùÓĞµÄ±êÊ¶£¬ 
+æŠŠå­—ç¬¦ä¸²stræ‹†åˆ†æˆä¸€ä¸ªæ•°ç»„ï¼Œç”¨ç©ºç™½ç¬¦(whitespace)ä½œä¸ºåˆ†éš”ç¬¦ï¼Œä¿ç•™æ‰€æœ‰çš„æ ‡è¯†ï¼Œ 
 
-°üÀ¨ÏàÁÚ·Ö¸ô·û²úÉúµÄ¿ÕµÄ±êÊ¶¡£Ëü¿É×÷ÎªStringTokenizerµÄÒ»¸öÌæ´ú¡£ 
+åŒ…æ‹¬ç›¸é‚»åˆ†éš”ç¬¦äº§ç”Ÿçš„ç©ºçš„æ ‡è¯†ã€‚å®ƒå¯ä½œä¸ºStringTokenizerçš„ä¸€ä¸ªæ›¿ä»£ã€‚ 
 
-WhitespaceÊÇÕâÑù¶¨ÒåµÄ{@link Character#isWhitespace(char)}¡£ 
+Whitespaceæ˜¯è¿™æ ·å®šä¹‰çš„{@link Character#isWhitespace(char)}ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.splitPreserveAllTokens(null))             = null 
 
@@ -1082,9 +1081,9 @@ StringUtils.splitPreserveAllTokens(" as   df "))     = {"","as","","","df","",""
 
 59.public static String[] splitPreserveAllTokens(String str, char separatorChar) 
 
-ºÍ58ÀàËÆ£¬Ö»ÊÇ·Ö¸ô·ûÎª×Ö·ûseparatorChar¡£ 
+å’Œ58ç±»ä¼¼ï¼Œåªæ˜¯åˆ†éš”ç¬¦ä¸ºå­—ç¬¦separatorCharã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.splitPreserveAllTokens(null, *)            = null 
 
@@ -1102,9 +1101,9 @@ StringUtils.splitPreserveAllTokens("as.df.gh",','))    = {"as.df.gh"}
 
 60.public static String[] splitPreserveAllTokens(String str, String separatorChars) 
 
-ºÍ59ÀàËÆ£¬Ö»ÊÇ·Ö¸ô·ûÎª×Ö·û´®separatorChars¡£ 
+å’Œ59ç±»ä¼¼ï¼Œåªæ˜¯åˆ†éš”ç¬¦ä¸ºå­—ç¬¦ä¸²separatorCharsã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.splitPreserveAllTokens(null, *)               = null 
 
@@ -1128,17 +1127,17 @@ StringUtils.splitPreserveAllTokens("as.df.gh",""))        = {"as.df.gh"}
 
 61.public static String[] splitPreserveAllTokens(String str, String separatorChars, int max) 
 
-ºÍÉÏÃæ¼¸¸öÀàËÆ£¬Ö»ÊÇÖ¸¶¨ÁËÊı×éµÄ×î´ó³¤¶È¡£ 
+å’Œä¸Šé¢å‡ ä¸ªç±»ä¼¼ï¼Œåªæ˜¯æŒ‡å®šäº†æ•°ç»„çš„æœ€å¤§é•¿åº¦ã€‚ 
 
-Èç¹ûmaxÎª0»ò¸ºÊı£¬ÔòÈÏÎªÃ»ÓĞÏŞÖÆ¡£ 
+å¦‚æœmaxä¸º0æˆ–è´Ÿæ•°ï¼Œåˆ™è®¤ä¸ºæ²¡æœ‰é™åˆ¶ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 62.public static String join(Object[] array) 
 
-°ÑÊı×éÖĞµÄÔªËØÁ¬½Ó³ÉÒ»¸ö×Ö·û´®·µ»Ø¡£ 
+æŠŠæ•°ç»„ä¸­çš„å…ƒç´ è¿æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²è¿”å›ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.join(null)                        = null 
 
@@ -1152,9 +1151,9 @@ StringUtils.join({"","as","","","df","",""})) = "asdf"
 
 63.public static String join(Object[] array, char separator) 
 
-°ÑÊı×éÖĞµÄÔªËØÁ¬½Ó³ÉÒ»¸ö×Ö·û´®·µ»Ø£¬°Ñ·Ö¸ô·ûseparatorÒ²¼ÓÉÏ¡£ 
+æŠŠæ•°ç»„ä¸­çš„å…ƒç´ è¿æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²è¿”å›ï¼ŒæŠŠåˆ†éš”ç¬¦separatorä¹ŸåŠ ä¸Šã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.join(null, *)                        = null 
 
@@ -1178,27 +1177,27 @@ StringUtils.join({"as.df.gh"},' '))              = "as.df.gh"
 
 64.public static String join(Object[] array, char separator, int startIndex, int endIndex) 
 
-°ÑÊı×éÖĞµÄÔªËØÁ¬½Ó³ÉÒ»¸ö×Ö·û´®·µ»Ø£¬°Ñ·Ö¸ô·ûseparatorÒ²¼ÓÉÏ¡£ 
+æŠŠæ•°ç»„ä¸­çš„å…ƒç´ è¿æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²è¿”å›ï¼ŒæŠŠåˆ†éš”ç¬¦separatorä¹ŸåŠ ä¸Šã€‚ 
 
-Á¬½ÓµÄ¿ªÊ¼Î»ÖÃÎªstartIndex£¬½áÊøÎ»ÖÃÎªendIndex¡£ 
+è¿æ¥çš„å¼€å§‹ä½ç½®ä¸ºstartIndexï¼Œç»“æŸä½ç½®ä¸ºendIndexã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 65.public static String join(Object[] array, String separator) 
 
-Óë63ÀàËÆ£¬ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+ä¸63ç±»ä¼¼ï¼Œè¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 66.public static String join(Object[] array, String separator, int startIndex, int endIndex) 
 
-Óë64ÀàËÆ£¬ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+ä¸64ç±»ä¼¼ï¼Œè¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 
 
 67.public static String deleteWhitespace(String str) 
 
-É¾³ı×Ö·û´®ÖĞµÄËùÓĞ¿Õ°×·û(whitespace)£¬¿Õ°×·ûÊÇÕâÑù¶¨ÒåµÄ{@link Character#isWhitespace(char)}¡£ 
+åˆ é™¤å­—ç¬¦ä¸²ä¸­çš„æ‰€æœ‰ç©ºç™½ç¬¦(whitespace)ï¼Œç©ºç™½ç¬¦æ˜¯è¿™æ ·å®šä¹‰çš„{@link Character#isWhitespace(char)}ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.deleteWhitespace(null)            = null 
 
@@ -1216,9 +1215,9 @@ StringUtils.deleteWhitespace(" as df "))        =    "asdf"
 
 68.public static String removeStart(String str, String remove) 
 
-Èç¹û×Ö·û´®strÊÇÒÔ×Ö·û´®remove¿ªÊ¼£¬ÔòÈ¥µôÕâ¸ö¿ªÊ¼£¬È»ºó·µ»Ø£¬·ñÔò·µ»ØÔ­À´µÄ´®¡£ 
+å¦‚æœå­—ç¬¦ä¸²stræ˜¯ä»¥å­—ç¬¦ä¸²removeå¼€å§‹ï¼Œåˆ™å»æ‰è¿™ä¸ªå¼€å§‹ï¼Œç„¶åè¿”å›ï¼Œå¦åˆ™è¿”å›åŸæ¥çš„ä¸²ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.removeStart(null, *)      = null 
 
@@ -1236,61 +1235,61 @@ StringUtils.removeStart("asdf","gh"))    = "asdf"
 
 69.public static String removeEnd(String str, String remove) 
 
-Èç¹û×Ö·û´®strÊÇÒÔ×Ö·û´®remove½áÎ²£¬ÔòÈ¥µôÕâ¸ö½áÎ²£¬È»ºó·µ»Ø£¬·ñÔò·µ»ØÔ­À´µÄ´®¡£ 
+å¦‚æœå­—ç¬¦ä¸²stræ˜¯ä»¥å­—ç¬¦ä¸²removeç»“å°¾ï¼Œåˆ™å»æ‰è¿™ä¸ªç»“å°¾ï¼Œç„¶åè¿”å›ï¼Œå¦åˆ™è¿”å›åŸæ¥çš„ä¸²ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 70.public static String remove(String str, String remove) 
 
-È¥µô×Ö·û´®strÖĞËùÓĞ°üº¬removeµÄ²¿·Ö£¬È»ºó·µ»Ø¡£ 
+å»æ‰å­—ç¬¦ä¸²strä¸­æ‰€æœ‰åŒ…å«removeçš„éƒ¨åˆ†ï¼Œç„¶åè¿”å›ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 71.public static String remove(String str, char remove) 
 
-È¥µô×Ö·û´®strÖĞËùÓĞ°üº¬removeµÄ²¿·Ö£¬È»ºó·µ»Ø¡£ 
+å»æ‰å­—ç¬¦ä¸²strä¸­æ‰€æœ‰åŒ…å«removeçš„éƒ¨åˆ†ï¼Œç„¶åè¿”å›ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 72.public static String replaceOnce(String text, String repl, String with) 
 
-ÔÚ×Ö·û´®textÖĞÓÃwith´úÌærepl£¬½öÒ»´Î¡£ 
+åœ¨å­—ç¬¦ä¸²textä¸­ç”¨withä»£æ›¿replï¼Œä»…ä¸€æ¬¡ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 73.public static String replace(String text, String repl, String with) 
 
-ÔÚ×Ö·û´®textÖĞÓÃwith´úÌærepl£¬Ìæ»»ËùÓĞ¡£ 
+åœ¨å­—ç¬¦ä¸²textä¸­ç”¨withä»£æ›¿replï¼Œæ›¿æ¢æ‰€æœ‰ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 74.public static String replace(String text, String repl, String with, int max) 
 
-ÔÚ×Ö·û´®textÖĞÓÃwith´úÌærepl£¬maxÎª×î´óÌæ»»´ÎÊı¡£ 
+åœ¨å­—ç¬¦ä¸²textä¸­ç”¨withä»£æ›¿replï¼Œmaxä¸ºæœ€å¤§æ›¿æ¢æ¬¡æ•°ã€‚ 
 
-Èç¹ûmaxĞ¡ÓÚ0£¬ÔòÌæ»»ËùÓĞ¡£ 
+å¦‚æœmaxå°äº0ï¼Œåˆ™æ›¿æ¢æ‰€æœ‰ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 75. public static String replaceChars(String str, char searchChar, char replaceChar) 
 
-ÔÚ×Ö·û´®strÖĞÓÃ×Ö·ûreplaceChar´úÌæËùÓĞ×Ö·ûsearchChar£¬ 
+åœ¨å­—ç¬¦ä¸²strä¸­ç”¨å­—ç¬¦replaceCharä»£æ›¿æ‰€æœ‰å­—ç¬¦searchCharï¼Œ 
 
-Èç¹û×Ö·û´®Îªnull»ò""£¬Ôò·µ»ØËü±¾Éí¡£ 
+å¦‚æœå­—ç¬¦ä¸²ä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº«ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 76.public static String replaceChars(String str, String searchChars, String replaceChars) 
 
-ÓÃreplaceChars´úÌæstrÖĞµÄsearchChars¡£ 
+ç”¨replaceCharsä»£æ›¿strä¸­çš„searchCharsã€‚ 
 
-replaceCharsµÄ³¤¶ÈÓ¦¸ÃºÍsearchCharsµÄ³¤¶ÈÏàµÈ£¬ 
+replaceCharsçš„é•¿åº¦åº”è¯¥å’ŒsearchCharsçš„é•¿åº¦ç›¸ç­‰ï¼Œ 
 
-Èç¹ûreplaceCharsµÄ³¤¶È´óÓÚsearchCharsµÄ³¤¶È£¬³¬¹ı³¤¶ÈµÄ×Ö·û½«±»ºöÂÔ£¬ 
+å¦‚æœreplaceCharsçš„é•¿åº¦å¤§äºsearchCharsçš„é•¿åº¦ï¼Œè¶…è¿‡é•¿åº¦çš„å­—ç¬¦å°†è¢«å¿½ç•¥ï¼Œ 
 
-Èç¹ûreplaceCharsµÄ³¤¶ÈĞ¡ÓÚsearchCharsµÄ³¤¶È£¬³¬¹ı³¤¶ÈµÄ×Ö·û½«±»É¾³ı¡£ 
+å¦‚æœreplaceCharsçš„é•¿åº¦å°äºsearchCharsçš„é•¿åº¦ï¼Œè¶…è¿‡é•¿åº¦çš„å­—ç¬¦å°†è¢«åˆ é™¤ã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.replaceChars(null, *, *)            = null 
 
@@ -1318,17 +1317,17 @@ StringUtils.replaceChars("assssddddf","sd","y"))= "ayyyyf"
 
 77.public static String overlay(String str, String overlay, int start, int end) 
 
-ÓÃ×Ö·û´®overlay¸²¸Ç×Ö·û´®str´Óstartµ½endÖ®¼äµÄ´®¡£ 
+ç”¨å­—ç¬¦ä¸²overlayè¦†ç›–å­—ç¬¦ä¸²strä»startåˆ°endä¹‹é—´çš„ä¸²ã€‚ 
 
-Èç¹ûstrÎªnull£¬Ôò·µ»Ønull 
+å¦‚æœsträ¸ºnullï¼Œåˆ™è¿”å›null 
 
-Èç¹ûstart»òendĞ¡ÓÚ0£¬ÔòÉèÎª0 
+å¦‚æœstartæˆ–endå°äº0ï¼Œåˆ™è®¾ä¸º0 
 
-Èç¹ûstart´óÓÚend£¬ÔòÁ½Õß½»»» 
+å¦‚æœstartå¤§äºendï¼Œåˆ™ä¸¤è€…äº¤æ¢ 
 
-Èç¹ûstart»òend´óÓÚstrµÄ³¤¶È£¬ÔòÈÏÎªµÈÓÚstrµÄ³¤¶È 
+å¦‚æœstartæˆ–endå¤§äºstrçš„é•¿åº¦ï¼Œåˆ™è®¤ä¸ºç­‰äºstrçš„é•¿åº¦ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.overlay(null, *, *, *)        = null 
 
@@ -1354,21 +1353,21 @@ StringUtils.overlay("asdfgh","",2,5))            =    "ash"
 
 78.public static String chop(String str) 
 
-È¥µô×Ö·û´®strµÄ×îºóÒ»¸ö×Ö·û¡£ 
+å»æ‰å­—ç¬¦ä¸²strçš„æœ€åä¸€ä¸ªå­—ç¬¦ã€‚ 
 
-Èç¹û×Ö·û´®ÒÔ"/r/n"½áÎ²£¬ÔòÈ¥µôËüÃÇ¡£ 
+å¦‚æœå­—ç¬¦ä¸²ä»¥"/r/n"ç»“å°¾ï¼Œåˆ™å»æ‰å®ƒä»¬ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 79.public static String repeat(String str, int repeat) 
 
-ÖØ¸´×Ö·û´®repeat´Î£¬×éºÏ³ÉÒ»¸öĞÂ´®·µ»Ø¡£ 
+é‡å¤å­—ç¬¦ä¸²repeatæ¬¡ï¼Œç»„åˆæˆä¸€ä¸ªæ–°ä¸²è¿”å›ã€‚ 
 
-Èç¹û×Ö·û´®strÎªnull»ò""£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœå­—ç¬¦ä¸²strä¸ºnullæˆ–""ï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-Èç¹ûrepeatĞ¡ÓÚ0£¬Ôò·µ»Ø"" 
+å¦‚æœrepeatå°äº0ï¼Œåˆ™è¿”å›"" 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.repeat(null, *) = null 
 
@@ -1382,25 +1381,25 @@ StringUtils.repeat("a", -2) = ""
 
 80.public static String rightPad(String str, int size) 
 
-Èç¹ûstrÎªnull£¬Ôò·µ»Ønull 
+å¦‚æœsträ¸ºnullï¼Œåˆ™è¿”å›null 
 
-Èç¹û×Ö·û´®³¤¶ÈĞ¡ÓÚsize£¬ÔòÔÚÓÒ±ß²¹¿Õ¸ñÊ¹Æä³¤¶ÈµÈÓÚsize£¬È»ºó·µ»Ø 
+å¦‚æœå­—ç¬¦ä¸²é•¿åº¦å°äºsizeï¼Œåˆ™åœ¨å³è¾¹è¡¥ç©ºæ ¼ä½¿å…¶é•¿åº¦ç­‰äºsizeï¼Œç„¶åè¿”å› 
 
-Èç¹û×Ö·û´®³¤¶È´óÓÚµÈÓÚsize£¬Ôò·µ»ØËü±¾Éí 
+å¦‚æœå­—ç¬¦ä¸²é•¿åº¦å¤§äºç­‰äºsizeï¼Œåˆ™è¿”å›å®ƒæœ¬èº« 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 81.public static String rightPad(String str, int size, char padChar) 
 
-ºÍ80ÀàËÆ£¬Ö»ÊÇ²¹µÄ×Ö·ûÎªpadChar¡£ 
+å’Œ80ç±»ä¼¼ï¼Œåªæ˜¯è¡¥çš„å­—ç¬¦ä¸ºpadCharã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 82.public static String rightPad(String str, int size, String padStr) 
 
-ºÍ80ÀàËÆ£¬Ö»ÊÇ²¹µÄÊÇ×Ö·û´®padStr¡£ 
+å’Œ80ç±»ä¼¼ï¼Œåªæ˜¯è¡¥çš„æ˜¯å­—ç¬¦ä¸²padStrã€‚ 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.rightPad(null, *, *)      = null 
 
@@ -1426,31 +1425,31 @@ StringUtils.rightPad("as",5,""))            =    "as   "
 
 83.public static String leftPad(String str, int size) 
 
-ºÍ80ÀàËÆ£¬Ö»ÊÇ²¹×ó±ß¡£ 
+å’Œ80ç±»ä¼¼ï¼Œåªæ˜¯è¡¥å·¦è¾¹ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 84.public static String leftPad(String str, int size, char padChar) 
 
-ºÍ81ÀàËÆ¡£ 
+å’Œ81ç±»ä¼¼ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 85.public static String leftPad(String str, int size, String padStr) 
 
-ºÍ82ÀàËÆ¡£ 
+å’Œ82ç±»ä¼¼ã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 86.public static String center(String str, int size) 
 
-²úÉúÒ»¸ö×Ö·û´®·µ»Ø£¬¸Ã×Ö·û´®³¤¶ÈµÈÓÚsize£¬strÎ»ÓÚĞÂ´®µÄÖĞĞÄ£¬ÆäËûÎ»ÖÃ²¹¿Õ¸ñ¡£ 
+äº§ç”Ÿä¸€ä¸ªå­—ç¬¦ä¸²è¿”å›ï¼Œè¯¥å­—ç¬¦ä¸²é•¿åº¦ç­‰äºsizeï¼Œsträ½äºæ–°ä¸²çš„ä¸­å¿ƒï¼Œå…¶ä»–ä½ç½®è¡¥ç©ºæ ¼ã€‚ 
 
-Èç¹ûstrÎªnull£¬Ôò·µ»Ønull 
+å¦‚æœsträ¸ºnullï¼Œåˆ™è¿”å›null 
 
-Èç¹ûsizeĞ¡ÓÚstrµÄ³¤¶È£¬Ôò·µ»Østr±¾Éí 
+å¦‚æœsizeå°äºstrçš„é•¿åº¦ï¼Œåˆ™è¿”å›stræœ¬èº« 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.center(null, *)   = null 
 
@@ -1470,21 +1469,21 @@ StringUtils.center("as",10))    =    "    as    "
 
 87.public static String center(String str, int size, char padChar) 
 
-ºÍ86ÀàËÆ£¬Ö»ÊÇÆäËûÎ»ÖÃ²¹padChar¡£ 
+å’Œ86ç±»ä¼¼ï¼Œåªæ˜¯å…¶ä»–ä½ç½®è¡¥padCharã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 88.public static String center(String str, int size, String padStr) 
 
-ºÍ86ÀàËÆ£¬Ö»ÊÇÆäËûÎ»ÖÃ²¹padStr¡£ 
+å’Œ86ç±»ä¼¼ï¼Œåªæ˜¯å…¶ä»–ä½ç½®è¡¥padStrã€‚ 
 
-ÕâÀï²»ÔÙ¾ÙÀı¡£ 
+è¿™é‡Œä¸å†ä¸¾ä¾‹ã€‚ 
 
 89.public static String swapCase(String str) 
 
-°Ñ×Ö·û´®ÖĞµÄ×Ö·û´óĞ´×ª»»ÎªĞ¡Ğ´£¬Ğ¡Ğ´×ª»»Îª´óĞ´¡£ 
+æŠŠå­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦å¤§å†™è½¬æ¢ä¸ºå°å†™ï¼Œå°å†™è½¬æ¢ä¸ºå¤§å†™ã€‚ 
 
-¾ÙÀı£º 
+ä¸¾ä¾‹ï¼š 
 
 StringUtils.swapCase(null)          = null 
 
@@ -1496,11 +1495,11 @@ StringUtils.swapCase("I am 11"))        =    "i AM 11"
 
 90.public static int countMatches(String str, String sub) 
 
-¼ÆËã×Ö·û´®subÔÚ×Ö·û´®strÖĞ³öÏÖµÄ´ÎÊı¡£ 
+è®¡ç®—å­—ç¬¦ä¸²subåœ¨å­—ç¬¦ä¸²strä¸­å‡ºç°çš„æ¬¡æ•°ã€‚ 
 
-Èç¹ûstrÎªnull»ò""£¬Ôò·µ»Ø0 
+å¦‚æœsträ¸ºnullæˆ–""ï¼Œåˆ™è¿”å›0 
 
-¾ÙÀı(*±íÊ¾ÈÎÒâ)£º 
+ä¸¾ä¾‹(*è¡¨ç¤ºä»»æ„)ï¼š 
 
 StringUtils.countMatches(null, *)        = 0 
 
@@ -1516,4 +1515,4 @@ StringUtils.countMatches("as",""))            = 0
 
 StringUtils.countMatches("as",null))        = 0 
 
-×ª×Ô£ºhttp://blog.csdn.net/fishnotears/article/details/6012953
+è½¬è‡ªï¼šhttp://blog.csdn.net/fishnotears/article/details/6012953
