@@ -19,7 +19,7 @@ StringUtils.isEmpty("")       = true
 
 StringUtils.isEmpty(" ")      = false 
 
-StringUtils.isEmpty("        ")     = false 
+StringUtils.isEmpty("        ")    = false 
 
 StringUtils.isEmpty("bob")       = false 
 
