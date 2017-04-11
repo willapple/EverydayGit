@@ -31,14 +31,3 @@ public class BinSearch {
     System.out.println("s = " + s);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
